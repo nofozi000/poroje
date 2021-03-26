@@ -41,6 +41,14 @@
           <Property Name="Capacity" Type="int" />
           <Property Name="CompanyId" Type="int" />
         </EntityType>
+        <EntityType Name="tbl_employee">
+          <Key>
+            <PropertyRef Name="ide" />
+          </Key>
+          <Property Name="e_pic" Type="nvarchar" MaxLength="50" />
+          <Property Name="ide" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idu" Type="int" />
+        </EntityType>
         <EntityType Name="tbl_log">
           <Key>
             <PropertyRef Name="id" />
@@ -123,6 +131,7 @@
           <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Flight" EntityType="Self.Flight" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Plane" EntityType="Self.Plane" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_employee" EntityType="Self.tbl_employee" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_log" EntityType="Self.tbl_log" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="UserType" EntityType="Self.UserType" Schema="dbo" store:Type="Tables" />
@@ -189,6 +198,14 @@
           <Property Name="Capacity" Type="Int32" />
           <Property Name="CompanyId" Type="Int32" />
           <NavigationProperty Name="Company" Relationship="Self.FK_Plane_Company" FromRole="Plane" ToRole="Company" />
+        </EntityType>
+        <EntityType Name="tbl_employee">
+          <Key>
+            <PropertyRef Name="ide" />
+          </Key>
+          <Property Name="e_pic" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ide" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idu" Type="Int32" />
         </EntityType>
         <EntityType Name="tbl_log">
           <Key>
@@ -274,6 +291,7 @@
           <EntitySet Name="Company" EntityType="Self.Company" />
           <EntitySet Name="Flight" EntityType="Self.Flight" />
           <EntitySet Name="Plane" EntityType="Self.Plane" />
+          <EntitySet Name="tbl_employee" EntityType="Self.tbl_employee" />
           <EntitySet Name="tbl_log" EntityType="Self.tbl_log" />
           <EntitySet Name="User" EntityType="Self.User" />
           <EntitySet Name="UserType" EntityType="Self.UserType" />
@@ -337,6 +355,15 @@
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Capacity" ColumnName="Capacity" />
                 <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_employee">
+            <EntityTypeMapping TypeName="AirplaneDBModel.tbl_employee">
+              <MappingFragment StoreEntitySet="tbl_employee">
+                <ScalarProperty Name="e_pic" ColumnName="e_pic" />
+                <ScalarProperty Name="ide" ColumnName="ide" />
+                <ScalarProperty Name="idu" ColumnName="idu" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

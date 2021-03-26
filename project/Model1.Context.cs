@@ -29,6 +29,7 @@ namespace project
         public virtual DbSet<Company> Company { get; set; }
         public virtual DbSet<Flight> Flight { get; set; }
         public virtual DbSet<Plane> Plane { get; set; }
+        public virtual DbSet<tbl_employee> tbl_employee { get; set; }
         public virtual DbSet<tbl_log> tbl_log { get; set; }
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<UserType> UserType { get; set; }

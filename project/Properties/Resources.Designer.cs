@@ -59,25 +59,5 @@ namespace project.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap avatardefault_92824 {
-            get {
-                object obj = ResourceManager.GetObject("avatardefault_92824", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pngfind_com_key_png_567059 {
-            get {
-                object obj = ResourceManager.GetObject("pngfind.com-key-png-567059", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

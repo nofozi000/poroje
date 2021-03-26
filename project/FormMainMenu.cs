@@ -17,6 +17,9 @@ namespace project
             InitializeComponent();
             //form backcolor
             this.BackColor = Color.FromArgb(67, 205, 226);
+            //pics
+            pictureBox1.Image = Image.FromFile(@"..\pic\key.png");
+            pictureBox2.Image = Image.FromFile(@"..\pic\user.png");
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -34,5 +37,7 @@ namespace project
             fl.ShowDialog();
             this.Close();
         }
+
+       
     }
 }

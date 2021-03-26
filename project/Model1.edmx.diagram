@@ -4,12 +4,13 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="97f092278ba346cda247ec66af81a010" Name="Diagram1">
+      <Diagram DiagramId="da5a3347c5aa4b918e7753b527513afb" Name="Diagram1">
         <EntityTypeShape EntityType="AirplaneDBModel.AirPlane" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
         <EntityTypeShape EntityType="AirplaneDBModel.Company" Width="1.5" PointX="5.75" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="AirplaneDBModel.Flight" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="AirplaneDBModel.Plane" Width="1.5" PointX="8" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="AirplaneDBModel.tbl_log" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirplaneDBModel.tbl_employee" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AirplaneDBModel.tbl_log" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="AirplaneDBModel.User" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
         <EntityTypeShape EntityType="AirplaneDBModel.UserType" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
         <AssociationConnector Association="AirplaneDBModel.FK_Flight_AirPlane" ManuallyRouted="false" />
