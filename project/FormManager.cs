@@ -15,6 +15,8 @@ namespace project
         public FormManager()
         {
             InitializeComponent();
+            //form backcolor
+            this.BackColor = Color.FromArgb(67, 205, 226);
         }
 
         //Method Connect
