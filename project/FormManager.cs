@@ -73,5 +73,28 @@ namespace project
                 connect();
             }
         }
+
+        int id = 0;
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (id==0)
+            {
+                MessageBox.Show("لطفا دوباره انتخاب کنید","IdIsNull",
+                    MessageBoxButtons.OK,MessageBoxIcon.Stop);
+            }
+            else 
+                id=int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dc_Airplane dc = new dc_Airplane();
+            var items = (from u in dc.User
+                         where u.Id == id
+                         select u).FirstOrDefault();
+            dc.User.Remove(items);
+            dc.SaveChanges();
+            connect();
+        }
     }
 }

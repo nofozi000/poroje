@@ -32,8 +32,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.pic = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -41,6 +42,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.dataGridView1);
@@ -83,6 +85,15 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(290, 362);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // pic
+            // 
+            this.pic.HeaderText = "عکس کارکنان";
+            this.pic.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.pic.MinimumWidth = 10;
+            this.pic.Name = "pic";
+            this.pic.ReadOnly = true;
             // 
             // label1
             // 
@@ -93,13 +104,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "لیست کارکنان";
             // 
-            // pic
+            // button1
             // 
-            this.pic.HeaderText = "عکس کارکنان";
-            this.pic.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.pic.MinimumWidth = 10;
-            this.pic.Name = "pic";
-            this.pic.ReadOnly = true;
+            this.button1.Location = new System.Drawing.Point(345, 190);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "حذف کاربران";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormManager
             // 
@@ -126,5 +139,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewImageColumn pic;
+        private System.Windows.Forms.Button button1;
     }
 }
