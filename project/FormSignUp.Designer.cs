@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -45,11 +50,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,6 +83,56 @@
             this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.panel1.Size = new System.Drawing.Size(460, 437);
             this.panel1.TabIndex = 0;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label14.Location = new System.Drawing.Point(103, 146);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(177, 13);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "سن کاربر باید بیشتر ار 18 سال باشد.";
+            this.label14.Visible = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label13.Location = new System.Drawing.Point(87, 241);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(252, 13);
+            this.label13.TabIndex = 18;
+            this.label13.Text = "رمز تکرار شده با رمز عبور وارد شده صحیح نمی باشد.";
+            this.label13.Visible = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label12.Location = new System.Drawing.Point(87, 295);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(193, 13);
+            this.label12.TabIndex = 17;
+            this.label12.Text = "نام کاربری باید بیشتر از 5 کاراکتر باشد!\r\n";
+            this.label12.Visible = false;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(87, 123);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 16;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(328, 221);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(80, 13);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "تکرار رمز عبور :";
             // 
             // label10
             // 
@@ -149,6 +199,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(87, 218);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ShortcutsEnabled = false;
             this.textBox3.Size = new System.Drawing.Size(200, 20);
             this.textBox3.TabIndex = 9;
             // 
@@ -156,6 +207,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(87, 176);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ShortcutsEnabled = false;
             this.textBox2.Size = new System.Drawing.Size(200, 20);
             this.textBox2.TabIndex = 8;
             // 
@@ -219,56 +271,6 @@
             this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "ثبت نام کاربران";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(328, 221);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(80, 13);
-            this.label11.TabIndex = 14;
-            this.label11.Text = "تکرار رمز عبور :";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(87, 123);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 16;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label12.Location = new System.Drawing.Point(87, 295);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(193, 13);
-            this.label12.TabIndex = 17;
-            this.label12.Text = "نام کاربری باید بیشتر از 5 کاراکتر باشد!\r\n";
-            this.label12.Visible = false;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label13.Location = new System.Drawing.Point(87, 241);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(252, 13);
-            this.label13.TabIndex = 18;
-            this.label13.Text = "رمز تکرار شده با رمز عبور وارد شده صحیح نمی باشد.";
-            this.label13.Visible = false;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label14.Location = new System.Drawing.Point(103, 146);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(177, 13);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "سن کاربر باید بیشتر ار 18 سال باشد.";
-            this.label14.Visible = false;
             // 
             // FormSignUp
             // 

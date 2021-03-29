@@ -84,7 +84,7 @@ namespace project
                                     }
                                 case 3:
                                     {
-                                        FormOperator fo = new FormOperator();
+                                        FormOperator fo = new FormOperator(user.Id);
                                         otherForm(fo);
                                         break;
                                     }

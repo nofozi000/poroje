@@ -59,6 +59,7 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="ClassCaptcha.cs" />
+    <Compile Include="ClassEditUserPassword.cs" />
     <Compile Include="ClassValidPassword.cs" />
     <Compile Include="Company.cs">
       <DependentUpon>Model1.tt</DependentUpon>
